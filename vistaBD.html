@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interfaz de Usuario - Base de Datos Centralizada</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    body {
+        background: linear-gradient(to bottom, #ffffff, #eff1f7);
+
+    }
+</style>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong><i class="fas fa-database"></i> Base de Datos Centralizada</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#mapas"><i class="fas fa-map"></i> Mapas Interactivos</a></li>
+            <li><a href="#dashboards"><i class="fas fa-chart-bar"></i> Dashboards</a></li>
+            <li><a href="#paneles" role="button"><i class="fas fa-cogs"></i> Paneles de Control</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <!-- Búsqueda Avanzada y Filtrado -->
+            <section>
+                <hgroup>
+                    <h2><i class="fas fa-search"></i> Búsqueda Avanzada</h2>
+                    <h3>Encuentra y filtra los datos fácilmente</h3>
+                </hgroup>
+                <p>Utiliza las opciones de búsqueda avanzada para encontrar los datos específicos que necesitas. Filtra por fecha, tipo de datos, y otras categorías relevantes.</p>
+                <form class="grid">
+                    <input type="text" id="search" name="search" placeholder="Buscar datos..." aria-label="Buscar datos">
+                    <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+                </form>
+            </section>
+
+            <!-- Visualización de Mapas Interactivos -->
+            <section id="mapas">
+                <hgroup>
+                    <h2><i class="fas fa-globe"></i> Mapas Interactivos</h2>
+                    <h3>Visualiza los datos satelitales</h3>
+                </hgroup>
+                <p>Interfaz para visualizar y explorar datos satelitales mediante mapas interactivos. Puedes hacer zoom, desplazarte y seleccionar áreas específicas para obtener más detalles.</p>
+                <figure>
+                    <img src="img1.png" alt="Mapa Interactivo">
+                    <figcaption><a href="https://source.unsplash.com/1024x768/?satellite-map" target="_blank">Ver ejemplo de mapa interactivo</a></figcaption>
+                </figure>
+            </section>
+
+            <!-- Dashboards para Reportes de Proyectos -->
+            <section id="dashboards">
+                <hgroup>
+                    <h2><i class="fas fa-tachometer-alt"></i> Dashboards</h2>
+                    <h3>Reportes de Proyectos en Tiempo Real</h3>
+                </hgroup>
+                <p>Accede a dashboards personalizables que muestran los reportes de proyectos en tiempo real. Estos paneles permiten a los usuarios monitorear el progreso y tomar decisiones informadas.</p>
+                <figure>
+                    <img src="img2.png" alt="Dashboard de Proyecto">
+                    <figcaption><a href="https://source.unsplash.com/1024x768/?dashboard" target="_blank">Ver ejemplo de dashboard</a></figcaption>
+                </figure>
+            </section>
+
+            <!-- Paneles de Control -->
+            <section id="paneles">
+                <hgroup>
+                    <h2><i class="fas fa-sliders-h"></i> Paneles de Control</h2>
+                    <h3>Gestión de Acceso a los Datos</h3>
+                </hgroup>
+                <p>Paneles de control intuitivos para gestionar el acceso a los datos. Configura permisos, roles de usuarios, y mantén un control completo sobre quién puede ver y modificar los datos.</p>
+                <figure>
+                    <img src="img3.png" alt="Panel de Control">
+                    <figcaption><a href="https://source.unsplash.com/1024x768/?control-panel" target="_blank">Ver ejemplo de panel de control</a></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+    <!-- Sección para Unirse a la Base de Datos Colaborativa -->
+    <section aria-label="Únete a la Base de Datos Colaborativa">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2><i class="fas fa-users"></i> Únete a la Base de Datos Colaborativa</h2>
+                    <h3>Contribuye al avance del sector aeroespacial en Perú</h3>
+                </hgroup>
+                <p>Forma parte de una iniciativa que busca consolidar la investigación y el desarrollo en ciencias espaciales en Perú. Al unirte a nuestra base de datos colaborativa, podrás compartir y acceder a información vital para el avance del sector aeroespacial, incluyendo imágenes satelitales, videos, oportunidades laborales, y proyectos de investigación.</p>
+                <form class="grid">
+                    <input type="text" id="institution" name="institution" placeholder="Nombre de la Institución" aria-label="Nombre de la Institución" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+                    <button type="submit" onclick="event.preventDefault()"><i class="fas fa-handshake"></i> Unirse</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#"><i class="fas fa-shield-alt"></i> Política de Privacidad</a> • <a href="#"><i class="fas fa-file-alt"></i> Términos y Condiciones</a></small>
+    </footer>
+</body>
+</html>
